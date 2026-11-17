@@ -1,12 +1,12 @@
 ---
 type: explanation
-description: "Находка (bug): задача вида bug — дефект, который не чинишь сейчас, файл сразу; воспроизведение, severity; статусы как в Bugzilla — unconfirmed, confirmed, fixed, verified, wontfix, invalid, duplicate; авария — postmortem"
+description: "Баг (bug): задача вида bug — дефект, который не чинишь сейчас, файл сразу; воспроизведение, severity; статусы как в Bugzilla — unconfirmed, confirmed, fixed, verified, wontfix, invalid, duplicate; авария — postmortem"
 project: methodology
-aliases: [Находка, bug, баг, finding, дефект, Находка и решение, авария, incident, postmortem]
+aliases: [Находка (bug), Находка, bug, баг, finding, дефект, Находка и решение, авария, incident, postmortem]
 tags: [методология]
 status: done
 ---
-# Находка (bug)
+# Баг (bug)
 
 ## Суть
 
@@ -23,7 +23,7 @@ status: done
   коммит починки, `duplicate_of` — у дубликата.
 - **Статусы** — жизненный цикл бага (как в Bugzilla):
   - `unconfirmed` — предположение; `confirmed` — воспроизведено или доказано чтением; `in-progress` — чинят;
-    `blocked` — нужен выбор человека, доступ или чужая починка (`waits`);
+    `blocked` — нужен выбор человека, доступ или чужая починка (`question`);
   - `fixed` — починено в коде (`fixed_in`), но ещё не там, где дефект живёт: не выложено или не проверено после
     выкладки. Баг ещё открыт;
   - закрывается только проверкой: `verified` с `verified_by` — какая проверка прошла там, где дефект был (на проде —
